@@ -1,0 +1,10 @@
+/storage/
+/.openai/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+/dist/maps.json
+/dist/maps-en.json
