@@ -1,4 +1,4 @@
-# 瓦罗兰特地图工具
+# 森希Valorant
 
 ## 启动
 双击“启动地图工具.cmd”，浏览器进入 http://127.0.0.1:8788 。需要 Node.js 22 或更新版本，项目不需要安装第三方依赖。保持服务窗口打开。不要直接打开dist/index.html来使用账号和同步功能，静态打开只能浏览原始地图。
@@ -23,3 +23,63 @@
 - storage/state.json：首次启动自动生成，保存账号哈希和已校准位置；请备份此文件。不要删除该文件，否则账号和校准资料会重置。
 
 同步范围是同一服务的所有浏览器。默认服务仅本机访问；复制项目后运行的两个独立服务不共享数据。本次开发预览8787端口与桌面正式启动8788端口为独立副本，请后续统一使用桌面入口。运行环境可通过HOST、PORT、ATLAS_DATA_DIR配置地址、端口及数据目录。
+
+## 道具点位（feature/utility-lineups）
+主页新增“道具点位”。可按地图、现役英雄、阵营和关键词筛选，查看技能说明、施放位置、准星参考、操作说明、注意事项、适用版本及原教程链接。当前英雄资料快照更新于2026-11-10，30位英雄；所有16张现有地图均可选择。
+
+管理员后台点击“管理道具点位”，可以新增、编辑、保存草稿、发布、下架和删除草稿。编辑器支持点击地图或输入百分比坐标设置站位与落点。保存后游客约3秒自动同步。只有标记“已实测”时必须填写游戏版本；资料来源不代表已在当前游戏内验证。
+
+初始资料为21条社区参考，覆盖16个地图与英雄组合，并非所有英雄×地图的热门点位全集。没有资料的组合明确显示待补充；不生成未经验证的精确投掷步骤，也没有编造热度排名。初始条目尚未录入精确地图标记，管理员可参考原教程自行校准。英雄基础技能资料可以在每个英雄详情中查看。
+
+参考资料：
+- 英雄名单：https://playvalorant.com/en-us/agents/；中文技能资料：https://valorant-api.com/
+- 社区教程索引：https://valoguide.com/lineups
+- Haven猎枭图文：https://road2radiant.pro/en/guides/maps/haven
+- Bind炼狱社区视频：https://tracker.gg/valorant/guides/clips?ability=Incendiary&agent=brimstone&map=bind&objective=defense
+- Breeze蝰蛇战术概览：https://www.valodata.pro/lineups/breeze/viper
+
+管理员修改保存到storage/lineups.json，与storage/state.json中的账号和地图校准独立；旧数据无需迁移，升级时保留storage目录。初始资料在dist/lineups-seed.json，英雄快照在dist/agents.json。
+
+验证：npm run check 检查源码语法；npm test 验证游客权限、草稿隔离、发布同步、坐标与URL校验、版本冲突、持久化和删除。测试使用临时独立存储，不会修改实际账号和地图坐标。
+
+GitHub Pages只提供静态参考资料浏览，无法运行Node.js管理员接口。账号、在线修改和所有游客同步需使用本地启动入口或部署server.cjs到支持Node.js的服务。
+
+
+## 详细截图与视频上传
+管理员进入道具点位编辑器，可上传截图和视频。每个点位最多8张截图、3个视频，上传后仍需保存点位，发布后游客才可观看。截图输入PNG/JPEG/静态WebP，单张20MB以内；视频输入MP4/WebM/MOV等可解码视频，单个200MB以内、3分钟以内。所有截图转换为1280×720 JPEG；视频转换为1280×720、30fps、H.264/AAC MP4。保持原始比例，空白处黑边填充，不拉伸、不裁剪。体积按内容压缩，不强制每个文件字节数相同。
+
+文件分类保存：
+- storage/uploads/images/<地图UUID>/<英雄UUID>/<媒体UUID>.jpg
+- storage/uploads/videos/<地图UUID>/<英雄UUID>/<媒体UUID>.mp4
+- storage/uploads/index.json：文件索引，需与lineups.json一同备份。
+
+草稿和未关联文件仅管理员可访问；下架点位后游客不能访问附件。移除附件会解除关联，保留磁盘文件以免误删其他引用。旧文件不会自动清理。上传并转码完成后若放弃表单，文件暂保留但不会向游客展示。
+
+首次安装运行npm ci（桌面启动脚本会在缺少转码工具时自动安装）。依赖ffmpeg-static、ffprobe-static。请使用包含node服务的入口；GitHub Pages不支持上传或持久保存媒体。视频支持页面内播放及Range分段拖动。npm test包含实际媒体上传、转码与权限回归测试，测试数据独立于正式数据。
+
+
+## 品牌标志
+项目名称：森希Valorant。Logo以三棵几何树和中央定位点组成，呼应“森”和地图战术工具。统一应用于全站页眉、首页、地图页、道具点位页、管理中心、编辑器、页脚及浏览器标签。
+
+品牌素材位于dist/brand/：senxi-logo.svg为横版Logo，senxi-mark.svg为独立图标，senxi-mark-mono.svg为单色图标，favicon.svg为标签图标。所有素材为可缩放矢量，色彩和留白规范见dist/brand/README.md。
+
+
+## 准星设置
+主页进入“准星设置”，包含准星库、准星生成器、准星设置教程。准星库支持按名称说明搜索、复制原始代码、载入生成器。内置3个森希基础样式，非职业选手当前配置。
+
+生成器支持8种预设颜色、轮廓、中心点、内外线开关/长度/粗细/间距/透明度，以及移动和射击误差开关；提供静态示意、背景与倍率切换、主准星代码生成及复制。代码包含完整的受支持参数，游戏内最终效果仍需练习场确认。已有代码的A/S镜内配置和未支持高级字段不会参与重新生成，载入前有明确提示；省略字段使用网页基础值补足，可能与游戏默认不同。库中直接复制的原始代码不改写。
+
+管理员后台“管理准星”可新增或编辑名称、原始代码、说明、发布状态及截图。最多4张截图，每张20MB以内，统一JPEG 1280×720。数据保存在storage/crosshairs.json，截图在storage/uploads/images/crosshairs/library/，文件索引仍为storage/uploads/index.json。草稿截图仅管理员可访问，游客只能查看已发布条目关联截图。
+
+参考信息与流程：https://valdb.com/zh/crosshair-generator/ 和 https://valdb.com/zh/crosshair-library/ 。参数含义参考社区原作者研究：https://www.reddit.com/r/VALORANT/comments/1h77xmk/ 。不批量搬运该站图库或图片，不宣称网页静态示意与当前游戏像素结果完全一致。
+
+npm test新增准星参数往返、边界、权限、截图上传、草稿隔离、编辑、发布、冲突保护与重启持久化检查。GitHub Pages仅能提供静态浏览；管理员保存和上传使用Node服务。
+
+
+## 版本发布与在线地址
+正式静态站点：https://gusenxi4532.github.io/ValorantMap/
+版本发布：https://github.com/gusenxi4532/ValorantMap/releases
+
+每次功能更新在独立分支完成，更新package.json和package-lock.json版本及RELEASE_NOTES.md，检查通过后合并main并推送。统一工作流自动运行检查和测试，为main提交创建对应版本标签和GitHub Release，附项目ZIP，再将dist准备为静态版部署到Pages。必须检查工作流成功和线上version.json版本后再交付。已有版本号不能复用于其他提交。
+
+Pages仅提供静态浏览和本地准星生成，不包含管理员登录、上传及服务端共享保存；这些功能请使用Release项目包运行Node服务。

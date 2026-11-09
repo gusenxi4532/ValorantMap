@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "preset-0",
+      "name": "森希 · 青色细十字",
+      "code": "0;P;c;5;h;1;t;1;o;1;d;0;z;2;a;1;0b;1;0l;4;0t;1;0o;2;0a;1;0m;0;0f;0;1b;0;1l;2;1t;2;1o;10;1a;0.35;1m;0;1f;0",
+      "description": "森希基础示例，可载入生成器自行调整。非职业选手当前配置。",
+      "published": true,
+      "attachments": []
+    },
+    {
+      "id": "preset-1",
+      "name": "森希 · 绿色中心点",
+      "code": "0;P;c;1;h;1;t;1;o;1;d;1;z;2;a;1;0b;0;0l;4;0t;1;0o;2;0a;1;0m;0;0f;0;1b;0;1l;2;1t;2;1o;10;1a;0.35;1m;0;1f;0",
+      "description": "森希基础示例，可载入生成器自行调整。非职业选手当前配置。",
+      "published": true,
+      "attachments": []
+    },
+    {
+      "id": "preset-2",
+      "name": "森希 · 白色紧凑十字",
+      "code": "0;P;c;0;h;0;t;1;o;1;d;0;z;2;a;1;0b;1;0l;3;0t;2;0o;1;0a;1;0m;0;0f;0;1b;0;1l;2;1t;2;1o;10;1a;0.35;1m;0;1f;0",
+      "description": "森希基础示例，可载入生成器自行调整。非职业选手当前配置。",
+      "published": true,
+      "attachments": []
+    }
+  ]
+}

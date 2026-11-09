@@ -1,0 +1,926 @@
+{
+  "updated": "2026-11-10",
+  "source": "https://playvalorant.com/en-us/agents/",
+  "agents": [
+    {
+      "id": "e370fa57-4757-3604-3648-499e1f642d3f",
+      "name": "盖可",
+      "en": "Gekko",
+      "role": "先锋",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "顽皮搭档",
+          "description": "【装备】可被摧毁的宠物<whitebold>皮蛋</>。按【射击】将其放出。皮蛋会<debuffred>追击</>看到的首名敌人，并在碰撞时造成<debuffred>震荡</>。按【辅助射击】派<whitebold>皮蛋</>前往指定的爆能器部署区，部署或拆除爆能器。\r\n\r\n技能失效后，皮蛋将变回<whitebold>球体</>。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "炫晕光波",
+          "description": "【装备】可被摧毁的宠物<whitebold>丢丢</>。按【射击】将其掷出。丢丢会向视线内的敌人发射电浆，将其<debuffred>致盲</>。\r\n\r\n技能失效后，丢丢将变回<whitebold>球体</>。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "嗨爆全场",
+          "description": "【装备】宠物<whitebold>嗨宝</>。按【射击】将其掷出。按【辅助射击】可轻抛。落地后，嗨宝会生成一片区域，持续造成少量<debuffred>伤害</>，随后爆炸，对其中的所有玩家造成大量<debuffred>伤害</>。\r\n\r\n技能失效后，嗨宝将变回<whitebold>球体</>。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "无敌超鲨",
+          "description": "【装备】可被摧毁的宠物<whitebold>鲨鲨</>。按【射击】进行操控。再次按【射击】可让鲨鲨向前冲刺并爆炸，<debuffred>束缚</>范围内的所有玩家。冲刺期间按【射击】可提前引爆。\r\n\r\n鲨鲨只能变回<whitebold>球体</>一次。"
+        },
+        {
+          "slot": "Passive",
+          "name": "球体回收",
+          "description": "盖可的技能在使用后会变为<whitebold>球体</>。\r\n\r\n与附近的<whitebold>球体</>【互动】即可将其回收，短暂冷却后可再次获得充能。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png"
+    },
+    {
+      "id": "dade69b4-4f5a-8528-247b-219e5a1facd6",
+      "name": "黑梦",
+      "en": "Fade",
+      "role": "先锋",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "幽爪",
+          "description": "【装备】<whitebold>幽爪</>。按【射击】将其掷出。【再次激活】可使其提前下落。落地后，<debuffred>捆缚</>敌人，并对其施加<debuffred>致聋</>和<debuffred>腐坏</>效果。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "诡眼",
+          "description": "【装备】可被摧毁的<whitebold>诡眼</>。按【射击】将其掷出。【再次激活】可使其提前下落。落地后，<debuffred>标记</>并<debuffred>揭露</>技能范围及其视线范围内的所有敌人。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "黯兽",
+          "description": "【装备】可被摧毁的<whitebold>黯兽</>。按【射击】将其放出。【按住射击】可使其朝你准星的方向移动。黯兽会<debuffred>追击</>看到的首名敌人或追踪<whitebold>魇迹</>，并在碰撞时造成<debuffred>视野收缩</>。 "
+        },
+        {
+          "slot": "Ultimate",
+          "name": "夜临",
+          "description": "【装备】<whitebold>夜临</>。按【射击】向前释放一道能量波，<debuffred>标记</>敌人，并对其施加<debuffred>致聋</>和<debuffred>腐坏</>效果。"
+        },
+        {
+          "slot": "Passive",
+          "name": "魇迹",
+          "description": "<debuffred>被标记</>的敌人会被<whitebold>魇迹</>追踪位置。 "
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/displayicon.png"
+    },
+    {
+      "id": "5f8d3a7f-467b-97f3-062c-13acf203c006",
+      "name": "铁臂",
+      "en": "Breach",
+      "role": "先锋",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "闪点爆破",
+          "description": "【装备】<whitebold>闪点爆破</>。按【射击】可透过墙壁引发一次爆破，<debuffred>致盲</>所有目击爆破点的玩家。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "山崩地陷",
+          "description": "【装备】<whitebold>山崩地陷</>。【按住射击】可增加射程。【松开】可引爆一片区域，使范围内的所有玩家受到<debuffred>震荡</>。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "剧震余波",
+          "description": "【装备】<whitebold>剧震余波</>。按【射击】可透过墙壁引发一次爆破，对范围内的所有玩家造成大量<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "惊雷卷地",
+          "description": "【装备】<whitebold>惊雷卷地</>。按【射击】向前释放一道地震波，<debuffred>击飞</>和<debuffred>震荡</>范围内的所有玩家。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/displayicon.png"
+    },
+    {
+      "id": "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
+      "name": "钢锁",
+      "en": "Deadlock",
+      "role": "哨卫",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "声感陷阱",
+          "description": "【装备】可被摧毁的<whitebold>声感陷阱</>。按【射击】进行部署。探测到附近敌人发出的噪音时触发，生成一片区域，对其中的所有玩家造成<debuffred>震荡</>效果。<whitebold>声感陷阱</>会在放置后进入<teal>隐形</>状态。\r\n\r\n此道具可以被回收。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "阻域屏障",
+          "description": "【装备】<whitebold>阻域屏障</>。按【射击】将其掷出。落地后，生成可被摧毁的节点，并在短暂延迟后加固。这些节点会形成屏障，阻挡玩家移动。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "重力捕网",
+          "description": "【装备】<whitebold>重力捕网</>。按【射击】将其掷出。按【辅助射击】可轻抛。落地时爆炸，迫使范围内的所有玩家<debuffred>蹲伏</>并<debuffred>减慢</>移动速度，持续至移除捕网为止。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "断魂索道",
+          "description": "【装备】<whitebold>断魂索道</>。按【射击】释放进行捕获，将命中的首个敌人包裹在一个可被摧毁的茧里，并拖拽目标沿一条索道移动。如果茧没有被摧毁，目标将受到<debuffred>致命伤害</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/displayicon.png"
+    },
+    {
+      "id": "b444168c-4e35-8076-db47-ef9bf368f384",
+      "name": "钛狐",
+      "en": "Tejo",
+      "role": "先锋",
+      "abilities": [
+        {
+          "slot": "Ability2",
+          "name": "精准投放",
+          "description": "【装备】战术地图。按【射击】设定位置。按【辅助射击】发射导弹，导弹抵达目标位置后持续释放脉冲，对范围内的所有玩家造成<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "特快专递",
+          "description": "【装备】<whitebold>特快专递</>。按【射击】发射。按【辅助射击】发射并使其弹跳一次。触碰到任意表面后爆炸，<debuffred>震荡</>范围内的所有玩家并<debuffred>造成伤害</>。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "末日审判",
+          "description": "【装备】战术地图。按【射击】设置起点，调整方向后再次按【射击】，即可释放一道冲击波，对范围内的所有玩家造成大量<debuffred>伤害</>。按【辅助射击】可取消瞄准。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "潜袭爬虫",
+          "description": "【装备】可被摧毁的<whitebold>潜袭爬虫</>。按【射击】进行操控。再次按【射击】，可<debuffred>揭露</>并<debuffred>压制</>技能范围及其视线范围内的附近敌人。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/displayicon.png"
+    },
+    {
+      "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+      "name": "雷兹",
+      "en": "Raze",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "惊喜翻腾",
+          "description": "【立即】投掷可被摧毁的<whitebold>惊喜翻腾</>，可粘附在物体表面，并在短暂延迟后完全就绪。【再次激活】即可将其引爆，<debuffred>击退</>命中的所有目标。\r\n\r\n完全就绪后，<whitebold>惊喜翻腾</>还会对敌人造成<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "彩雷飞溅",
+          "description": "【装备】<whitebold>彩雷飞溅</>。按【射击】将其掷出。按【辅助射击】可轻抛。短暂延迟后爆炸，造成<debuffred>伤害</>并生成子榴弹，每颗子榴弹也会对范围内所有玩家造成<debuffred>伤害</>。\r\n\r\n每击败两名敌人，可重置充能。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "花车巡游",
+          "description": "【装备】可被摧毁的<whitebold>花车巡游</>。按【射击】将其放出。<debuffred>追击</>看到的首名敌人，并在碰撞时爆炸，对敌人造成<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "晚安焰火",
+          "description": "【立即】准备<whitebold>晚安焰火</>。按【射击】发射。触碰到任意表面后爆炸，对范围内所有玩家造成大量<debuffred>伤害</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayicon.png"
+    },
+    {
+      "id": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
+      "name": "尚勃勒",
+      "en": "Chamber",
+      "role": "哨卫",
+      "abilities": [
+        {
+          "slot": "Ability2",
+          "name": "闪转自如",
+          "description": "【装备】可被摧毁的<whitebold>闪转自如</>。按【射击】进行部署。处于范围内时，【再次激活】可立即传送到其位置。\r\n\r\n此道具可以被召回。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "贵宾限行",
+          "description": "【装备】可被摧毁的<whitebold>贵宾限行</>。按【射击】进行部署。附近范围内出现可见的敌人时触发，生成一片使所有玩家<debuffred>减速</>的区域。\r\n\r\n此道具可以被召回。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "金牌猎头",
+          "description": "【装备】<whitebold>金牌猎头</>。按【射击】开火。按【辅助射击】开镜瞄准。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "孤高火力",
+          "description": "【激活】后可召唤一把狙击枪，命中上半身时可造成<debuffred>致命伤害</>。\r\n\r\n按【射击】开火。可使用【辅助射击】开镜瞄准。击败敌人时，会生成一片使所有玩家<debuffred>减速</>的区域。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png"
+    },
+    {
+      "id": "601dbbe7-43ce-be57-2a40-4abd24953621",
+      "name": "K/O",
+      "en": "KAY/O",
+      "role": "先锋",
+      "abilities": [
+        {
+          "slot": "Grenade",
+          "name": "碎片溢出",
+          "description": "【装备】<whitebold>碎片溢出</>。按【射击】将其掷出。按【辅助射击】可轻抛。落地时爆炸，持续对范围内的所有玩家造成<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "闪存过载",
+          "description": "【装备】<whitebold>闪存过载</>。按【射击】将其掷出。按【辅助射击】可轻抛。短暂延迟后引爆，<debuffred>致盲</>所有目击它的玩家。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "零点嗅探",
+          "description": "【装备】可被摧毁的<whitebold>零点嗅探</>。按【射击】将其掷出。触碰到任意表面后释放脉冲，<debuffred>压制</>范围内的敌人。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "无效命令",
+          "description": "【立即】进入<teal>超载状态</>并持续释放脉冲，<debuffred>压制</>范围内的敌人。\r\n\r\n<teal>超载</>期间，获得<teal>作战强化</>状态。K/O在受到<debuffred>致命伤害</>时会被击倒，并能重启再战。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png"
+    },
+    {
+      "id": "6f2a04ca-43e0-be17-7f36-b3908627744d",
+      "name": "斯凯",
+      "en": "Skye",
+      "role": "先锋",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "辟林之虎",
+          "description": "【装备】可被摧毁的<whitebold>辟林之虎</>。按【射击】进行操控。再次按【射击】可使其向前扑出并爆炸，<debuffred>震荡</>范围内的所有玩家，并对直接命中的敌人造成<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "引路之隼",
+          "description": "【装备】<whitebold>引路之隼</>。按【射击】将其放出。【按住射击】可使其朝你准星的方向移动。【再次激活】即可将其引爆，<debuffred>致盲</>所有目击它的玩家。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "愈生之息",
+          "description": "【装备】<whitebold>愈生之息</>。【按住射击】可<teal>治疗</>技能范围内且在视线内的队友。治疗池储量有限。\r\n\r\n无法治疗自己。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "追猎之灵",
+          "description": "【装备】可被摧毁的<whitebold>追猎之灵</>。按【射击】可派出最多三个<whitebold>追猎之灵</>。追猎之灵会<debuffred>追击</>距离最近的三名敌人，并在碰撞时使其<debuffred>视野收缩</>和<debuffred>减速</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png"
+    },
+    {
+      "id": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+      "name": "零",
+      "en": "Cypher",
+      "role": "哨卫",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "赛博囚笼",
+          "description": "【立即】投掷一个<whitebold>赛博囚笼</>。与其【互动】可生成一片阻碍视野的圆柱体，并在敌人与其接触时发出提示音。\r\n\r\n此道具可在【购买阶段】回收。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "战术监控",
+          "description": "【装备】可被摧毁的<whitebold>战术监控</>。按【射击】进行部署。<whitebold>战术监控</>会在放置后进入<teal>隐形</>状态。【再次激活】可进行操控。按【射击】发射一支定位镖，<debuffred>瞬时揭露</>命中的敌人，持续至定位镖被移除为止。\r\n\r\n此道具可以被回收。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "震慑绊线",
+          "description": "【装备】可被摧毁的<whitebold>震慑绊线</>。按【射击】可在两个物体表面之间布置一根绊线。<whitebold>震慑绊线</>会在放置后进入<teal>隐形</>状态。当敌人接触时触发，<debuffred>捆缚</>敌人，并在短暂延迟后激活，如果<whitebold>震慑绊线</>未被摧毁，则<debuffred>揭露</>敌人的位置。\r\n\r\n此道具可以被回收。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "神经取析",
+          "description": "对被击败的敌方玩家【激活】。短暂延迟后，<debuffred>瞬时揭露</>存活的敌人两次。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayicon.png"
+    },
+    {
+      "id": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
+      "name": "猎枭",
+      "en": "Sova",
+      "role": "先锋",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "雷击箭",
+          "description": "【装备】<whitebold>雷击箭</>。按【射击】射出箭矢，箭矢在触碰到任意表面后爆炸，对范围内的所有玩家造成<debuffred>伤害</>。【按住射击】可提升箭矢速度。按【辅助射击】可增加弹跳次数，最多两次。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "寻敌箭",
+          "description": "【装备】可被摧毁的<whitebold>寻敌箭</>。按【射击】射出箭矢，持续<debuffred>揭露</>技能范围及其视线范围内的附近敌人。【按住射击】可提升箭矢速度。按【辅助射击】可增加弹跳次数，最多两次。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "枭型无人机",
+          "description": "【装备】可被摧毁的<whitebold>枭型无人机</>。按【射击】进行操控。再次按【射击】，发射一支可持续<debuffred>揭露</>敌人的定位镖。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "狂猎之怒",
+          "description": "【装备】<whitebold>狂猎之怒</>。按【射击】向一片区域发射，造成<debuffred>伤害</>。最多可再次发射两次。\r\n\r\n被命中的敌人会向猎枭<debuffred>揭露</>其位置。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayicon.png"
+    },
+    {
+      "id": "7c8a4701-4de6-9355-b254-e09bc2a34b72",
+      "name": "迷核",
+      "en": "Miks",
+      "role": "控场",
+      "abilities": [
+        {
+          "slot": "Grenade",
+          "name": "电音脉冲",
+          "description": "【装备】可被摧毁的<whitebold>电音脉冲</>。按【辅助射击】可在<debuffred>震荡</>输出与<teal>治疗</>输出之间切换。按【射击】将其掷出。落地后会持续发出脉冲，对范围内的所有玩家施加所选效果。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "声波帷幕",
+          "description": "【装备】战术地图。按【射击】设定烟雾位置。按【辅助射击】施放烟雾。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "共振谐律",
+          "description": "【装备】<whitebold>共振谐律</>。瞄准一名队友并按【射击】，为你和该队友提供<teal>作战强化</>和<teal>加速</>效果。激活期间，如果两名处于<whitebold>共振谐律</>状态的玩家均存活，则每次击败敌人都会刷新<teal>增益</>效果。按【辅助射击】对自己施放，无法刷新增益效果。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "音脉强袭",
+          "description": "【装备】<whitebold>音脉强袭</>。按【射击】向前释放一片区域，<debuffred>击退</>范围内的所有玩家，并对其造成<debuffred>致聋</>和<debuffred>减速</>效果。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/displayicon.png"
+    },
+    {
+      "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+      "name": "奇乐",
+      "en": "Killjoy",
+      "role": "哨卫",
+      "abilities": [
+        {
+          "slot": "Grenade",
+          "name": "纳米蜂群",
+          "description": "【装备】可被摧毁的<whitebold>纳米蜂群</>。按【射击】将其掷出。按【辅助射击】可轻抛。<whitebold>纳米蜂群</>会在落地后进入<teal>隐形</>状态。与其【互动】会生成一片区域，对其中的所有玩家造成<debuffred>伤害</>。\r\n\r\n此道具可在【购买阶段】回收。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "自动哨兵",
+          "description": "【装备】可被摧毁的<whitebold>自动哨兵</>。按【射击】进行部署。<whitebold>自动哨兵</>会在放置后进入<teal>隐形</>状态。附近范围内出现可见的敌人时触发。自动哨兵会<debuffred>追击</>看到的首名敌人，引发爆炸并施加<debuffred>易伤</>效果。\r\n\r\n此道具可以被召回。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "哨戒炮台",
+          "description": "【装备】可被摧毁的<whitebold>哨戒炮台</>。在此期间，可【再次激活】调转方向或【按住辅助射击】进行旋转。按【射击】进行部署。炮台会向视线内的敌人射击。\r\n\r\n此道具可以被召回。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "全面封锁",
+          "description": "【装备】可被摧毁的<whitebold>全面封锁</>。按【射击】进行部署。延迟后，<debuffred>束缚</>范围内的敌人。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png"
+    },
+    {
+      "id": "95b78ed7-4637-86d9-7e41-71ba8c293152",
+      "name": "海神",
+      "en": "Harbor",
+      "role": "控场",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "狂潮",
+          "description": "【装备】<whitebold>狂潮</>。按【射击】向前发射一道可阻挡视野的水墙，并使所有接触到的玩家<debuffred>减速</>。【按住射击】可使其朝你准星的方向移动。按【辅助射击】可提前中断。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "乱涌",
+          "description": "【装备】<whitebold>乱涌</>。按【射击】将其掷出。落地时爆炸，对所有玩家造成<debuffred>视野收缩</>和<debuffred>减速</>效果。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "海盾",
+          "description": "【进入】深海视界。【再次激活】即可释放烟雾。按住【射击】/【辅助射击】可调整距离。按【换弹】可切换视野。释放后，【再次激活】即可将烟雾转化为可被摧毁的护盾。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "怒涛",
+          "description": "【装备】<whitebold>怒涛</>。按【射击】向前推出一道可阻挡视野的水墙，并使所有接触到的玩家<debuffred>视野收缩</>和<debuffred>减速</>。【再次激活】即可使水墙提前停止。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/displayicon.png"
+    },
+    {
+      "id": "efba5359-4016-a1e5-7626-b1ae76895940",
+      "name": "维斯",
+      "en": "Vyse",
+      "role": "哨卫",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "裁断",
+          "description": "【装备】<whitebold>裁断</>。按【射击】进行部署。<whitebold>裁断</>会在放置后进入<teal>隐形</>状态。敌人经过时触发，短暂延迟后生成一道不可摧毁的墙体。\r\n\r\n此道具可以在【购买阶段】召回。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "弧光玫瑰",
+          "description": "【装备】可被摧毁的<whitebold>弧光玫瑰</>。按【射击】进行部署。按【辅助射击】可放置在墙的另一侧。【再次激活】可<debuffred>致盲</>所有目击它的玩家。 \r\n\r\n此道具可以被召回。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "剃刀藤蔓",
+          "description": "【装备】可被摧毁的<whitebold>剃刀藤蔓</>。按【射击】将其掷出。<whitebold>剃刀藤蔓</>会在落地后进入<teal>隐形</>状态。与其【互动】会生成一片区域，对穿行的玩家造成<debuffred>伤害</>和<debuffred>减速</>。\r\n\r\n此道具可以在【购买阶段】召回。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "铁棘禁园",
+          "description": "【装备】<whitebold>铁棘禁园</>。按【射击】进行部署。短暂延迟后，<debuffred>阻塞</>范围内敌人的主要武器。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/displayicon.png"
+    },
+    {
+      "id": "707eab51-4836-f488-046a-cda6bf494859",
+      "name": "蝰蛇",
+      "en": "Viper",
+      "role": "控场",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "瘴云",
+          "description": "【装备】<whitebold>瘴云</>。按【射击】将其掷出。按【辅助射击】可轻抛。【再次激活】即可消耗燃料，生成一团<whitebold>有毒</>烟雾，对敌人造成<debuffred>腐坏</>效果。\r\n\r\n此道具可在【购买阶段】回收。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "毒幕",
+          "description": "【装备】<whitebold>毒幕</>。按【射击】向前沿直线发射并放置气雾发射器阵列。【再次激活】即可消耗燃料，生成一道可阻挡视野的<whitebold>有毒</>墙体，对敌人造成<debuffred>腐坏</>效果。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "蛇吻",
+          "description": "【装备】<whitebold>蛇吻</>。按【射击】发射。落地后，生成一片区域，对其中的所有玩家施加<debuffred>易伤</>效果并造成少量<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "蝰腹",
+          "description": "【装备】<whitebold>蝰腹</>。按【射击】生成一大片可阻挡视野的<whitebold>有毒</>气雾，并使其中的敌人受到<debuffred>腐坏</>效果。\r\n\r\n【按住激活】可使气雾消散。"
+        },
+        {
+          "slot": "Passive",
+          "name": "虺毒",
+          "description": "蝰蛇的<whitebold>药剂</>会对接触到的敌人持续造成<debuffred>腐坏</>效果。燃料会随时间自动恢复。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png"
+    },
+    {
+      "id": "ddd5a15c-4fbe-42fa-3789-11a55ca5ee04",
+      "name": "遐思",
+      "en": "Hush",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "灵光一念",
+          "description": "【装备】<whitebold>灵光一念</>。按【射击】将其掷出。按【辅助射击】进行准备。【再次激活】使其朝你的准星位置移动。此道具会在接触到任何表面后或在一段延迟后爆炸，<debuffred>致盲</>所有目击它的玩家。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "念落星移",
+          "description": "【装备】<whitebold>念落星移</>。按【射击】将其掷出。按【辅助射击】进行准备。【再次激活】使其朝你的准星位置移动。此道具会在接触到任何表面后或在一段延迟后爆炸，将其中的玩家<debuffred>拉向</>其中心；若玩家与任意表面或其他玩家相撞，还会受到<debuffred>震荡</>。\r\n\r\n每击败两名敌人，可重置充能。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "身随念动",
+          "description": "【立即】创造一个锚点。如果遐思位于空中，将短暂在原地悬浮。短暂延迟后，飞向锚点。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "万念皆空",
+          "description": "【立即】准备<whitebold>万念皆空</>。按【射击】将其放出，期间可使用准星进行引导。【再次激活】或再次按【射击】引爆，使所有玩家<debuffred>悬浮</>。"
+        },
+        {
+          "slot": "Passive",
+          "name": "念力",
+          "description": "遐思可以从更远处拾取武器、爆能器或与开关【互动】。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/ddd5a15c-4fbe-42fa-3789-11a55ca5ee04/displayicon.png"
+    },
+    {
+      "id": "eb93336a-449b-9c1b-0a54-a891f7921d69",
+      "name": "不死鸟",
+      "en": "Phoenix",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Grenade",
+          "name": "火冒三丈",
+          "description": "【装备】<whitebold>火冒三丈</>。按【射击】向前发射一道可阻挡视野的<whitebold>火焰</>墙，对穿过它的所有玩家造成<debuffred>伤害</>。【按住射击】可使其朝你准星的方向移动。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "火热手感",
+          "description": "【装备】<whitebold>火热手感</>。按【射击】将其掷出。按【辅助射击】可轻抛。落地后，生成一片<whitebold>火焰</>区域，对其中的所有玩家造成<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "闪光曲球",
+          "description": "【装备】<whitebold>闪光曲球</>。按【射击】投掷左曲球，按【辅助射击】投掷右曲球。短暂延迟后引爆，<debuffred>致盲</>所有目击它的玩家。\r\n\r\n每击败两名敌人，可重置充能。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "再火一回",
+          "description": "【立即】在当前位置放置标记。在受到<debuffred>致命伤害</>或<whitebold>再火一回</>结束时，返回标记位置满血重生，且保留技能激活时的护甲值。"
+        },
+        {
+          "slot": "Passive",
+          "name": "心火不熄",
+          "description": "不死鸟处于自己创造的<whitebold>火焰</>中时，不仅不会受到伤害，反而会获得<teal>治疗</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png"
+    },
+    {
+      "id": "92eeef5d-43b5-1d4a-8d03-b3927a09034b",
+      "name": "禁灭",
+      "en": "Veto",
+      "role": "哨卫",
+      "abilities": [
+        {
+          "slot": "Ability2",
+          "name": "噬源体",
+          "description": "【装备】可被摧毁的<whitebold>噬源体</>。按【射击】进行部署。【再次激活】即可激活。激活后，摧毁一切可以被射击或能从玩家身上弹开的敌方装置，仅对技能范围及其视线范围内的装置生效。\r\n\r\n此道具可以被召回。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "涡流折跃",
+          "description": "【装备】可被摧毁的<whitebold>涡流折跃</>。按【射击】进行部署。处于范围内时，与其【互动】可传送到其位置。\r\n\r\n此道具可以在【购买阶段】召回。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "完全进化",
+          "description": "【立即】进入<teal>进化</>状态。\r\n\r\n<teal>进化</>状态会提供<teal>作战强化</>、持续<teal>治疗</>，并使你<teal>免疫</>除武器外的减益效果和伤害。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "裂变残片",
+          "description": "【装备】可被摧毁的<whitebold>裂变残片</>。按【射击】将其掷出。<whitebold>裂变残片</>会在落地后进入<teal>隐形</>状态。附近范围内出现可见的敌人时触发，<debuffred>捆缚</>敌人，并对其施加<debuffred>致聋</>和<debuffred>腐坏</>效果。\r\n\r\n此道具可以在【购买阶段】召回。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/displayicon.png"
+    },
+    {
+      "id": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
+      "name": "星礈",
+      "en": "Astra",
+      "role": "控场",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "新星脉冲",
+          "description": "【激活】一颗<whitebold>星体</>，将其引爆，对所有被命中的玩家造成<debuffred>震荡</>效果。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "星云",
+          "description": "【激活】一颗<whitebold>星体</>，将其转化为烟雾。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "重力之阱",
+          "description": "【激活】一颗<whitebold>星体</>，生成一片区域，处于该区域的所有玩家会被<debuffred>拉向</>中心点，随后爆炸并对陷入其中的所有玩家施加<debuffred>易伤</>效果。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "宇宙分裂",
+          "description": "【进入】<whitebold>星界形态</>。按【辅助射击】以【装备】<whitebold>宇宙分裂</>。按【射击】设置起点，调整方向后再次按【射击】，即可生成一道无法被摧毁且能阻隔声音的墙体。"
+        },
+        {
+          "slot": "Passive",
+          "name": "星界形态",
+          "description": "【激活终极技能】以【进入】<whitebold>星界形态</>。按【射击】来施放<whitebold>星体</>。 \r\n\r\n与<whitebold>星体</>【互动】可将其召回。召回<whitebold>星体</>时将生成一道短暂存在的烟雾。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/displayicon.png"
+    },
+    {
+      "id": "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
+      "name": "炼狱",
+      "en": "Brimstone",
+      "role": "控场",
+      "abilities": [
+        {
+          "slot": "Grenade",
+          "name": "振奋信标",
+          "description": "【立即】投掷一个<whitebold>振奋信标</>。落地后，生成一片区域，为其中的队友提供<teal>作战强化</>和<teal>加速</>效果。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "燃烧榴弹",
+          "description": "【装备】<whitebold>燃烧榴弹</>。按【射击】发射。落地后，生成一片区域，对其中的所有玩家造成<debuffred>伤害</>。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "空投烟幕",
+          "description": "【装备】战术地图。按【射击】设定烟雾位置。按【辅助射击】施放烟雾。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "天基光束",
+          "description": "【装备】战术地图。按【射击】向目标位置释放<whitebold>天基光束</>，持续对所有玩家造成大量<debuffred>伤害</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayicon.png"
+    },
+    {
+      "id": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
+      "name": "壹决",
+      "en": "Iso",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "稳态剥离",
+          "description": "【装备】<whitebold>稳态剥离</>。按【射击】将其放出。对范围内的所有玩家施加<debuffred>压制</>和<debuffred>易伤</>效果。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "决斗通牒",
+          "description": "【装备】<whitebold>决斗通牒</>。按【射击】向前释放一片区域，将你和命中的首名敌人拉入一场一对一的决斗。\r\n\r\n在决斗开始时集中意念，进入<whitebold>心流</>状态。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "战斗心流",
+          "description": "【立即】集中意念，进入<whitebold>心流</>状态。获得一道可抵挡一次伤害的护盾。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "绝对屏障",
+          "description": "【装备】<whitebold>绝对屏障</>。按【射击】向前推出一道不可被摧毁、可阻挡视野的墙体。按【辅助射击】可推出速度更慢的墙体。"
+        },
+        {
+          "slot": "Passive",
+          "name": "战斗心流",
+          "description": "在<whitebold>心流</>状态下，壹决以更快速度装弹，且受到其伤害或被其击败的敌人会生成可摧毁的能量球。\r\n\r\n射击能量球，可获得一个可格挡一次伤害的护盾，并刷新<whitebold>心流</>状态。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayicon.png"
+    },
+    {
+      "id": "1dbf2edd-4729-0984-3115-daa5eed44993",
+      "name": "暮蝶",
+      "en": "Clove",
+      "role": "控场",
+      "abilities": [
+        {
+          "slot": "Grenade",
+          "name": "虹吸",
+          "description": "瞄准一名被你造成伤害或击败的阵亡敌人【激活】，即可获得<teal>加速</>和<teal>过量治疗</>。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "霞染",
+          "description": "【装备】战术地图。按【射击】设定烟雾位置。按【辅助射击】施放烟雾。\r\n\r\n阵亡期间，暮蝶可使用<whitebold>霞染</>施放短暂存在的烟雾。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "化蝶",
+          "description": "被击败后，【激活】此技能即可引导<teal>自我复活</>。引导期间，暮蝶处于<teal>无形</>状态。【再次激活】即可提前结束引导。复活后，必须完成一次击败或助攻才能继续存活。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "整蛊",
+          "description": "【装备】<whitebold>整蛊</>。按【射击】将其掷出。落地时爆炸，对范围内的所有玩家造成<debuffred>腐坏</>效果。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/displayicon.png"
+    },
+    {
+      "id": "bb2a4828-46eb-8cd1-e765-15848195d751",
+      "name": "霓虹",
+      "en": "Neon",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Ability2",
+          "name": "充能疾驰",
+          "description": "【立即】消耗燃料，获得<teal>加速</>。【再次激活】可取消。按【辅助射击】向前方或当前移动方向滑行。\r\n\r\n每击败两名敌人，可重置滑行。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "闪电弹球",
+          "description": "【立即】投掷一支能量弹，可弹跳一次。每次触碰到物体表面都会爆炸，<debuffred>震荡</>范围内的所有玩家。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "高速通道",
+          "description": "【立即】释放两道可阻挡视野的墙体。墙体会向前延伸，直至碰到物体表面为止。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "超限暴走",
+          "description": "【立即】刷新<whitebold>充能疾驰</>。获得发射精准闪电光束的能力，可在<whitebold>充能疾驰</>激活期间使用。\r\n\r\n按【射击】开火。击败敌人时，完全恢复燃料。"
+        },
+        {
+          "slot": "Passive",
+          "name": "蓄能电芯",
+          "description": "燃料会随时间自动恢复。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/displayicon.png"
+    },
+    {
+      "id": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
+      "name": "夜露",
+      "en": "Yoru",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Grenade",
+          "name": "出其不意",
+          "description": "【装备】<whitebold>出其不意</>。按【射击】向前派出一个可被摧毁的镜像。按【辅助射击】在当前位置放置标记。与标记【互动】可将其转化为镜像。\r\n\r\n镜像会持续前进，并转向首名攻击它的敌人，<debuffred>致盲</>所有目击它的玩家。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "攻其不备",
+          "description": "【装备】<whitebold>攻其不备</>。按【射击】将其掷出。在物体表面反弹后爆炸，<debuffred>致盲</>所有目击它的玩家。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "不请自来",
+          "description": "【装备】<whitebold>不请自来</>。按【射击】将其放出。按【辅助射击】放置。【再次激活】即可传送到其位置。与其【互动】即可触发佯装传送。\r\n\r\n每击败两名敌人，可重置充能。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "神鬼不觉",
+          "description": "【装备】<whitebold>神鬼不觉</>。按【射击】进入<teal>无形</>和<teal>隐形</>状态。处于此状态时，可以使用<whitebold>不请自来</>。【再次激活】可提前退出。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/displayicon.png"
+    },
+    {
+      "id": "df1cb487-4902-002e-5c17-d28e83e78588",
+      "name": "幻棱",
+      "en": "Waylay",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Ability2",
+          "name": "溯流回光",
+          "description": "【立即】在当前位置放置标记。【再次激活】即可传送到其位置。穿行时，幻棱处于<teal>免疫</>状态，但无法看到敌人。\r\n\r\n每击败两名敌人，可重置充能。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "光棱闪爆",
+          "description": "【装备】<whitebold>光棱闪爆</>。按【射击】将其掷出。落地时爆炸，<debuffred>干扰</>范围内的所有玩家。"
+        },
+        {
+          "slot": "Ability1",
+          "name": "光速飞跃",
+          "description": "【装备】<whitebold>光速飞跃</>。按【射击】向前冲刺两次。按【辅助射击】向前冲刺一次。\r\n\r\n只有第一次冲刺可以升空。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "时光修罗场",
+          "description": "【装备】<whitebold>时光修罗场</>。按【射击】获得<teal>加速</>，并向前释放一片区域，<debuffred>干扰</>范围内的所有玩家。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/displayicon.png"
+    },
+    {
+      "id": "569fdd95-4d10-43ab-ca70-79becc718b46",
+      "name": "贤者",
+      "en": "Sage",
+      "role": "哨卫",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "薄冰",
+          "description": "【装备】<whitebold>薄冰</>。按【射击】将其掷出。落地后，生成一片使所有玩家<debuffred>减速</>的区域，并在敌人穿过时发出提示音。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "逢春",
+          "description": "【装备】<whitebold>逢春</>。瞄准一名受伤的队友并按【射击】，对其进行<teal>治疗</>。按【辅助射击】对自己施放。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "玉城",
+          "description": "【装备】可被摧毁的<whitebold>玉城</>。在此期间，可【再次激活】调转墙体方向或【按住辅助射击】进行旋转。按【射击】放置一道可被摧毁的墙体，墙体将在短暂延迟后加固。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "再起",
+          "description": "【装备】<whitebold>再起</>。瞄准一名倒下的队友按下【射击】，即可使其<teal>复活</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png"
+    },
+    {
+      "id": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
+      "name": "芮娜",
+      "en": "Reyna",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "噬尽",
+          "description": "【立即】吞噬一颗<whitebold>魂珠</>来获得<teal>治疗</>。溢出的治疗量会转化为<teal>过量治疗</>。\r\n\r\n【终极技能】激活期间，<whitebold>噬尽</>会自动施放。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "逐散",
+          "description": "【立即】吞噬一颗<whitebold>魂珠</>，短暂进入<teal>无形</>状态。【再次激活】可提前取消。\r\n\r\n【终极技能】激活期间，还会进入<teal>隐形</>状态。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "睥睨",
+          "description": "【装备】可被摧毁的<whitebold>睥睨</>。按【射击】放出。短暂延迟后成形，使目击它的敌人受到<debuffred>视野收缩</>。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "女皇旨令",
+          "description": "【立即】进入<teal>女皇旨令</>状态。\r\n\r\n<teal>女皇旨令</>会为你提供<teal>作战强化</>，允许无限次吞噬<whitebold>魂珠</>，并给予永久<teal>过量治疗</>。"
+        },
+        {
+          "slot": "Passive",
+          "name": "魂息",
+          "description": "被芮娜造成伤害或被其击败的阵亡敌人会生成一颗<whitebold>魂珠</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png"
+    },
+    {
+      "id": "8e253930-4c05-31dd-1b6c-968525494517",
+      "name": "幽影",
+      "en": "Omen",
+      "role": "控场",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "暗魇",
+          "description": "【装备】<whitebold>暗魇</>。按【射击】将其放出。对触碰到的所有玩家施加<debuffred>视野收缩</>和<debuffred>致聋</>效果。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "黑瘴",
+          "description": "【进入】暗影视界。【再次激活】即可释放烟雾。按住【射击】/【辅助射击】可调整距离。按【换弹】可切换视野。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "践影",
+          "description": "【装备】<whitebold>践影</>。按【射击】短暂引导后，传送到目标位置。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "离魂",
+          "description": "【装备】战术地图。按【射击】开始传送到目标位置。传送期间，幽影会以一个可被摧毁的阴影形态出现在目标位置。【再次激活】可取消。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png"
+    },
+    {
+      "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+      "name": "捷风",
+      "en": "Jett",
+      "role": "决斗",
+      "abilities": [
+        {
+          "slot": "Ability1",
+          "name": "凌空",
+          "description": "【立即】腾空直上，高高跃起。"
+        },
+        {
+          "slot": "Ability2",
+          "name": "逐风",
+          "description": "【立即】准备一次冲刺。【再次激活】即可向前方或当前移动方向冲刺。\r\n\r\n每击败两名敌人，可重置充能。"
+        },
+        {
+          "slot": "Grenade",
+          "name": "瞬云",
+          "description": "【立即】投掷一团烟雾。触碰到任意表面或在一段延迟后，形成一朵短暂存在的云雾。【按住激活】可使其朝你准星的方向移动。"
+        },
+        {
+          "slot": "Ultimate",
+          "name": "飓刃",
+          "description": "【立即】获得五把高度精准的飞刀，命中头部可造成<debuffred>致命伤害</>。\r\n\r\n按【射击】开火。击败敌人时，刷新飞刀。按【辅助射击】可投掷所有剩余的飞刀，但不会触发飞刀刷新的效果。"
+        },
+        {
+          "slot": "Passive",
+          "name": "飘移",
+          "description": "下落时按住【跳跃】即可<teal>飘移</>。"
+        }
+      ],
+      "icon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png"
+    }
+  ]
+}
