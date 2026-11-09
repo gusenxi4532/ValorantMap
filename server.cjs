@@ -10,8 +10,10 @@ function token(req){return (req.headers.cookie||'').split(';').map(x=>x.trim()).
 function authenticated(req){const t=token(req),s=sessions.get(t);if(!s)return false;if(s.expires<Date.now()){sessions.delete(t);return false}return true}
 function json(res,status,data,headers={}){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff',...headers});res.end(JSON.stringify(data))}
 async function body(req){let s='';for await(const chunk of req){s+=chunk;if(s.length>100000)throw Error('请求内容过大')}return JSON.parse(s||'{}')}
-const lineupHandler=require('./lineup-store.cjs')({root,dir,maps:context.window.MAP_DATA,json,body,authenticated});
-const server=http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost'),route=url.pathname;if(route.startsWith('/api/')){
+const media=require('./media-store.cjs')({dir,maps:context.window.MAP_DATA,agents:JSON.parse(fs.readFileSync(path.join(root,'dist/agents.json'),'utf8')).agents,json,authenticated});
+const lineupHandler=require('./lineup-store.cjs')({root,dir,maps:context.window.MAP_DATA,json,body,authenticated,media});
+media.canRead=(id,req)=>lineupHandler.canReadMedia(id,authenticated(req));
+const server=http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost'),route=url.pathname;if(await media.handle(req,res,url))return;if(route.startsWith('/api/')){
 if(!['GET','HEAD'].includes(req.method)){if(req.headers.origin&&req.headers.origin!==`http://${req.headers.host}`)return json(res,403,{error:'请求来源无效'});if(!req.headers['content-type']?.startsWith('application/json'))return json(res,415,{error:'需要JSON请求'})}
 if(await lineupHandler(req,res,route))return;
 if(route==='/api/session'&&req.method==='GET')return json(res,200,{admin:authenticated(req),username:authenticated(req)?state.account.username:null});
