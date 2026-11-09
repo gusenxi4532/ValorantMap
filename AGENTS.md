@@ -12,3 +12,11 @@
 - storage/ 包含账号和校准结果，禁止提交；.openai/ 和本地环境配置也禁止提交。
 - Node.js 22+，无第三方运行依赖。启动：node server.cjs；桌面入口端口为8788。
 - 后端变更应验证认证、游客写入限制及数据持久化；地图变更应检查点位坐标和浏览器交互。
+
+## 版本发布与Pages（用户授权的持续流程）
+- 每次功能更新保持独立功能分支，完成检查后合并main并推送。
+- 必须更新package.json和package-lock.json中的SemVer版本，并同步更新RELEASE_NOTES.md。
+- main推送后由统一工作流运行检查、生成v<版本>标签和GitHub Release、附上项目ZIP，并部署dist到GitHub Pages。
+- 必须等待Release与Pages部署成功并实际核对线上版本，最终回复附Pages地址和Release地址；失败时修复并继续，不把提交成功当作部署成功。
+- 既有版本标签不可移动；发布新版本必须提升版本号。
+- Pages为静态浏览版，账号、上传和共享保存由Node服务提供。

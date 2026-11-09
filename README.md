@@ -74,3 +74,12 @@ GitHub Pages只提供静态参考资料浏览，无法运行Node.js管理员接�
 参考信息与流程：https://valdb.com/zh/crosshair-generator/ 和 https://valdb.com/zh/crosshair-library/ 。参数含义参考社区原作者研究：https://www.reddit.com/r/VALORANT/comments/1h77xmk/ 。不批量搬运该站图库或图片，不宣称网页静态示意与当前游戏像素结果完全一致。
 
 npm test新增准星参数往返、边界、权限、截图上传、草稿隔离、编辑、发布、冲突保护与重启持久化检查。GitHub Pages仅能提供静态浏览；管理员保存和上传使用Node服务。
+
+
+## 版本发布与在线地址
+正式静态站点：https://gusenxi4532.github.io/ValorantMap/
+版本发布：https://github.com/gusenxi4532/ValorantMap/releases
+
+每次功能更新在独立分支完成，更新package.json和package-lock.json版本及RELEASE_NOTES.md，检查通过后合并main并推送。统一工作流自动运行检查和测试，为main提交创建对应版本标签和GitHub Release，附项目ZIP，再将dist准备为静态版部署到Pages。必须检查工作流成功和线上version.json版本后再交付。已有版本号不能复用于其他提交。
+
+Pages仅提供静态浏览和本地准星生成，不包含管理员登录、上传及服务端共享保存；这些功能请使用Release项目包运行Node服务。

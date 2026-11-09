@@ -8,3 +8,5 @@ node_modules/
 *.tmp
 /dist/maps.json
 /dist/maps-en.json
+
+/_site/
