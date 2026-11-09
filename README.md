@@ -62,3 +62,15 @@ GitHub Pages只提供静态参考资料浏览，无法运行Node.js管理员接�
 项目名称：森希Valorant。Logo以三棵几何树和中央定位点组成，呼应“森”和地图战术工具。统一应用于全站页眉、首页、地图页、道具点位页、管理中心、编辑器、页脚及浏览器标签。
 
 品牌素材位于dist/brand/：senxi-logo.svg为横版Logo，senxi-mark.svg为独立图标，senxi-mark-mono.svg为单色图标，favicon.svg为标签图标。所有素材为可缩放矢量，色彩和留白规范见dist/brand/README.md。
+
+
+## 准星设置
+主页进入“准星设置”，包含准星库、准星生成器、准星设置教程。准星库支持按名称说明搜索、复制原始代码、载入生成器。内置3个森希基础样式，非职业选手当前配置。
+
+生成器支持8种预设颜色、轮廓、中心点、内外线开关/长度/粗细/间距/透明度，以及移动和射击误差开关；提供静态示意、背景与倍率切换、主准星代码生成及复制。代码包含完整的受支持参数，游戏内最终效果仍需练习场确认。已有代码的A/S镜内配置和未支持高级字段不会参与重新生成，载入前有明确提示；省略字段使用网页基础值补足，可能与游戏默认不同。库中直接复制的原始代码不改写。
+
+管理员后台“管理准星”可新增或编辑名称、原始代码、说明、发布状态及截图。最多4张截图，每张20MB以内，统一JPEG 1280×720。数据保存在storage/crosshairs.json，截图在storage/uploads/images/crosshairs/library/，文件索引仍为storage/uploads/index.json。草稿截图仅管理员可访问，游客只能查看已发布条目关联截图。
+
+参考信息与流程：https://valdb.com/zh/crosshair-generator/ 和 https://valdb.com/zh/crosshair-library/ 。参数含义参考社区原作者研究：https://www.reddit.com/r/VALORANT/comments/1h77xmk/ 。不批量搬运该站图库或图片，不宣称网页静态示意与当前游戏像素结果完全一致。
+
+npm test新增准星参数往返、边界、权限、截图上传、草稿隔离、编辑、发布、冲突保护与重启持久化检查。GitHub Pages仅能提供静态浏览；管理员保存和上传使用Node服务。

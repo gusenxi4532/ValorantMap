@@ -12,10 +12,12 @@ function json(res,status,data,headers={}){res.writeHead(status,{'Content-Type':'
 async function body(req){let s='';for await(const chunk of req){s+=chunk;if(s.length>100000)throw Error('请求内容过大')}return JSON.parse(s||'{}')}
 const media=require('./media-store.cjs')({dir,maps:context.window.MAP_DATA,agents:JSON.parse(fs.readFileSync(path.join(root,'dist/agents.json'),'utf8')).agents,json,authenticated});
 const lineupHandler=require('./lineup-store.cjs')({root,dir,maps:context.window.MAP_DATA,json,body,authenticated,media});
-media.canRead=(id,req)=>lineupHandler.canReadMedia(id,authenticated(req));
+const crosshairHandler=require('./crosshair-store.cjs')({root,dir,json,body,authenticated,media});
+media.canRead=(id,req)=>lineupHandler.canReadMedia(id,authenticated(req))||crosshairHandler.canReadMedia(id,authenticated(req));
 const server=http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost'),route=url.pathname;if(await media.handle(req,res,url))return;if(route.startsWith('/api/')){
 if(!['GET','HEAD'].includes(req.method)){if(req.headers.origin&&req.headers.origin!==`http://${req.headers.host}`)return json(res,403,{error:'请求来源无效'});if(!req.headers['content-type']?.startsWith('application/json'))return json(res,415,{error:'需要JSON请求'})}
 if(await lineupHandler(req,res,route))return;
+if(await crosshairHandler(req,res,route))return;
 if(route==='/api/session'&&req.method==='GET')return json(res,200,{admin:authenticated(req),username:authenticated(req)?state.account.username:null});
 if(route==='/api/positions'&&req.method==='GET')return json(res,200,{revision:state.revision,overrides:state.overrides});
 if(route==='/api/login'&&req.method==='POST'){const key=req.socket.remoteAddress,a=attempts.get(key);if(a&&a.count>=10&&a.until>Date.now())return json(res,429,{error:'尝试次数过多，请15分钟后再试'});const b=await body(req);if(typeof b.username!=='string'||typeof b.password!=='string'||b.password.length>256)return json(res,400,{error:'账号或密码格式无效'});const computed=hash(b.password,state.account.salt).hash;const valid=b.username===state.account.username&&crypto.timingSafeEqual(Buffer.from(computed,'hex'),Buffer.from(state.account.hash,'hex'));if(!valid){attempts.set(key,{count:a&&a.until>Date.now()?a.count+1:1,until:Date.now()+900000});return json(res,401,{error:'账号或密码错误'})}attempts.delete(key);const old=token(req);if(old)sessions.delete(old);const t=crypto.randomBytes(32).toString('hex');sessions.set(t,{expires:Date.now()+ttl});return json(res,200,{admin:true,username:state.account.username},{'Set-Cookie':`atlas_session=${t}; HttpOnly; SameSite=Strict; Path=/; Max-Age=28800`})}
