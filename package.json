@@ -1,0 +1,13 @@
+{
+  "name": "valorant-map-atlas",
+  "version": "1.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node tests/lineups.test.cjs",
+    "check": "node --check server.cjs && node --check lineup-store.cjs && node --check dist/app.js && node --check dist/lineups.js"
+  }
+}

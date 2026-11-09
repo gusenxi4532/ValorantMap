@@ -23,3 +23,23 @@
 - storage/state.json：首次启动自动生成，保存账号哈希和已校准位置；请备份此文件。不要删除该文件，否则账号和校准资料会重置。
 
 同步范围是同一服务的所有浏览器。默认服务仅本机访问；复制项目后运行的两个独立服务不共享数据。本次开发预览8787端口与桌面正式启动8788端口为独立副本，请后续统一使用桌面入口。运行环境可通过HOST、PORT、ATLAS_DATA_DIR配置地址、端口及数据目录。
+
+## 道具点位（feature/utility-lineups）
+主页新增“道具点位”。可按地图、现役英雄、阵营和关键词筛选，查看技能说明、施放位置、准星参考、操作说明、注意事项、适用版本及原教程链接。当前英雄资料快照更新于2026-11-10，30位英雄；所有16张现有地图均可选择。
+
+管理员后台点击“管理道具点位”，可以新增、编辑、保存草稿、发布、下架和删除草稿。编辑器支持点击地图或输入百分比坐标设置站位与落点。保存后游客约3秒自动同步。只有标记“已实测”时必须填写游戏版本；资料来源不代表已在当前游戏内验证。
+
+初始资料为21条社区参考，覆盖16个地图与英雄组合，并非所有英雄×地图的热门点位全集。没有资料的组合明确显示待补充；不生成未经验证的精确投掷步骤，也没有编造热度排名。初始条目尚未录入精确地图标记，管理员可参考原教程自行校准。英雄基础技能资料可以在每个英雄详情中查看。
+
+参考资料：
+- 英雄名单：https://playvalorant.com/en-us/agents/；中文技能资料：https://valorant-api.com/
+- 社区教程索引：https://valoguide.com/lineups
+- Haven猎枭图文：https://road2radiant.pro/en/guides/maps/haven
+- Bind炼狱社区视频：https://tracker.gg/valorant/guides/clips?ability=Incendiary&agent=brimstone&map=bind&objective=defense
+- Breeze蝰蛇战术概览：https://www.valodata.pro/lineups/breeze/viper
+
+管理员修改保存到storage/lineups.json，与storage/state.json中的账号和地图校准独立；旧数据无需迁移，升级时保留storage目录。初始资料在dist/lineups-seed.json，英雄快照在dist/agents.json。
+
+验证：npm run check 检查源码语法；npm test 验证游客权限、草稿隔离、发布同步、坐标与URL校验、版本冲突、持久化和删除。测试使用临时独立存储，不会修改实际账号和地图坐标。
+
+GitHub Pages只提供静态参考资料浏览，无法运行Node.js管理员接口。账号、在线修改和所有游客同步需使用本地启动入口或部署server.cjs到支持Node.js的服务。
