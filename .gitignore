@@ -10,3 +10,6 @@ node_modules/
 /dist/maps-en.json
 
 /_site/
+
+/secrets/
+/backups/

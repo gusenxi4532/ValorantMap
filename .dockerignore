@@ -1,0 +1,12 @@
+.git
+node_modules
+storage
+_site
+.openai
+.env
+.env.*
+!.env.example
+secrets
+backups
+*.log
+*.tmp

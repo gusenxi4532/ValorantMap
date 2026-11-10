@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
           cache: npm
       - name: Install dependencies
         run: npm ci
@@ -32,6 +32,35 @@ jobs:
         run: |
           npm run check
           npm test
+      - name: Verify production container and proxy
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker build -t senxi-ci .
+          docker run -d --name senxi-ci -p 127.0.0.1:8799:8787 -e PUBLIC_ORIGIN=https://senxi.example.com -e ADMIN_PASSWORD=CI-temporary-password-12345 senxi-ci
+          trap 'docker logs senxi-ci; docker rm -f senxi-ci' EXIT
+          for i in {1..30}; do curl -fsS http://127.0.0.1:8799/healthz && break || sleep 2; done
+          curl -fsS http://127.0.0.1:8799/healthz
+          docker exec senxi-ci /usr/bin/ffmpeg -version
+          docker run --rm -e DOMAIN=senxi.example.com -e ACME_EMAIL=admin@example.com -v "$PWD/deploy/Caddyfile:/etc/caddy/Caddyfile:ro" caddy:2 caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile
+          mkdir -p secrets
+          printf 'CI-temporary-password-12345' > secrets/admin_password.txt
+          DOMAIN=senxi.example.com ACME_EMAIL=admin@example.com docker compose config --quiet
+      - name: Exercise backup and restore with persistent volumes
+        shell: bash
+        run: |
+          set -euo pipefail
+          export DOMAIN=senxi.example.com ACME_EMAIL=admin@example.com APP_VERSION=1.6.0 DATA_VOLUME_NAME=senxi-ci-original
+          docker tag senxi-ci senxi-valorant:1.6.0
+          docker compose up -d --no-build app
+          for i in {1..20}; do docker compose exec -T app node -e "fetch('http://127.0.0.1:8787/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))" && break || sleep 2; done
+          docker compose exec -T app sh -c 'echo restore-check > /data/restore-check.txt'
+          bash deploy/backup.sh
+          docker compose stop app
+          export DATA_VOLUME_NAME=senxi-ci-restored
+          bash deploy/restore.sh "$(find backups -name '*.tar.gz' | head -1)"
+          docker compose run --rm --no-deps -T --entrypoint sh app -c 'test -s /data/state.json && grep -qx restore-check /data/restore-check.txt'
+          docker compose down
       - name: Publish version
         env:
           GH_TOKEN: ${{ github.token }}
