@@ -1,0 +1,76 @@
+name: senxi-valorant
+services:
+  app:
+    build: .
+    image: senxi-valorant:${APP_VERSION:-1.6.0}
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    environment:
+      PUBLIC_ORIGIN: https://${DOMAIN:?请在.env中填写域名}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD_FILE: /run/secrets/admin_password
+      TRUSTED_PROXY_IPS: 172.30.90.2
+      MEDIA_QUOTA_MB: ${MEDIA_QUOTA_MB:-10240}
+      ICP_NUMBER: ${ICP_NUMBER:-}
+      PUBLIC_SECURITY_NUMBER: ${PUBLIC_SECURITY_NUMBER:-}
+      PUBLIC_SECURITY_CODE: ${PUBLIC_SECURITY_CODE:-}
+    secrets:
+      - admin_password
+    volumes:
+      - app_data:/data
+    networks:
+      backend:
+        ipv4_address: 172.30.90.3
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    mem_limit: 2g
+    cpus: 2
+    pids_limit: 160
+    stop_grace_period: 25s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+      - '443:443/udp'
+    environment:
+      DOMAIN: ${DOMAIN:?请在.env中填写域名}
+      ACME_EMAIL: ${ACME_EMAIL:?请填写证书通知邮箱}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      backend:
+        ipv4_address: 172.30.90.2
+    depends_on:
+      app:
+        condition: service_healthy
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+secrets:
+  admin_password:
+    file: ./secrets/admin_password.txt
+volumes:
+  app_data:
+    name: ${DATA_VOLUME_NAME:-senxi-valorant-data}
+  caddy_data:
+  caddy_config:
+networks:
+  backend:
+    ipam:
+      config:
+        - subnet: 172.30.90.0/24
