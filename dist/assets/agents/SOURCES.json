@@ -1,0 +1,20 @@
+{
+  "credit": "Character artwork © Riot Games. Unofficial fan project.",
+  "sources": [
+    {
+      "agent": "Jett",
+      "image": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/fullportrait.png",
+      "reference": "https://playvalorant.com/en-us/agents/jett/"
+    },
+    {
+      "agent": "Omen",
+      "image": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/fullportrait.png",
+      "reference": "https://playvalorant.com/en-us/agents/omen/"
+    },
+    {
+      "agent": "Viper",
+      "image": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/fullportrait.png",
+      "reference": "https://playvalorant.com/en-us/agents/viper/"
+    }
+  ]
+}
