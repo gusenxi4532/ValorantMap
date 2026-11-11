@@ -2,7 +2,7 @@ name: senxi-valorant
 services:
   app:
     build: .
-    image: senxi-valorant:${APP_VERSION:-1.6.0}
+    image: senxi-valorant:${APP_VERSION:-1.7.0}
     restart: unless-stopped
     init: true
     read_only: true
